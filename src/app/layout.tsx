@@ -1,5 +1,3 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.scss';
 
@@ -18,21 +16,15 @@ export const metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params: { locale }
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
-  const messages = await getMessages();
-
   return (
-    <html lang={locale}>
+    <html>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
