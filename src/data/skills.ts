@@ -1,0 +1,46 @@
+import { SkillCategory } from '@/types';
+
+export const skills: SkillCategory = {
+  language: ["js", "ts", "python"],
+  database: ["sqlite", "postgreSql"],
+  other: ["html", "css", "sass", "scss", "less", "stylus", "ejs", "jinja", "pug"],
+  tool: ["vscode", "nvim", "figma", "git"],
+  framework: ["react", "next", "gulp", "express", "flask", "quart"]   
+};
+
+export const techs: { [key: string]: string } = {
+  ts: "TypeScript",
+  js: "JavaScript",
+  python: "Python",
+  sqlite: "SQLite",
+  mongo: "MongoDB",
+  postgreSql: "PostgreSQL",
+  html: "HTML",
+  css: "CSS",
+  sass: "SASS",
+  scss: "SCSS",
+  less: "Less",
+  stylus: "Stylus",
+  ejs: "EJS",
+  jinja: "Jinja2",
+  node: "Node.js",
+  vscode: "VSCode",
+  nvim: "NeoVim",
+  figma: "Figma",
+  git: "Git & GitHub",
+  xfce: "XFCE",
+  react: "React",
+  discordJs: "Discord.js",
+  flask: "Flask",
+  quart: "Quart",
+  express: "Express",
+  rtk: "RTK",
+  zod: "Zod",
+  webpack: "WebPack",
+  pug: "Pug",
+  gulp: "Gulp",
+  next: "Next",
+  deno: "Deno",
+  pixijs: "PixiJS",
+  preact: "Preact",
+};
