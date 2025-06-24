@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import { Project as ProjectType } from '@/types';
 import { techs } from '@/data/skills';
@@ -28,7 +30,7 @@ export default function Project({ project }: ProjectProps) {
 
       return (
         <a key={key} href={href} className={`button ${className}`}>
-          {name} =&gt;
+          {name} =>
         </a>
       );
     });

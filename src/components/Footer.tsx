@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import MediaIcon from './MediaIcon';
 import Logo from './Logo';

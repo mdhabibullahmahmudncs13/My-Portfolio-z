@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import SkillBlock from '../SkillBlock';
 import { skills } from '@/data/skills';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import ProjectList from '../ProjectList';
@@ -12,7 +14,7 @@ export default function Projects() {
       <div className="projects__header">
         <h2 className="h2">{t('title')}</h2>
         <Link className="projects__link" href={`/${locale}/projects`}>
-          {t('button')} ~~&gt;
+          {t('button')} ~~>
         </Link>
       </div>
       <ProjectList projects={projects.slice(0, 3)} />

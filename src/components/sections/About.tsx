@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 
@@ -15,7 +17,7 @@ export default function About() {
           ))}
         </div>
         <Link href={`/${locale}/about-me`} className="button">
-          {t('button')} -&gt;
+          {t('button')} ->
         </Link>
       </div>
       

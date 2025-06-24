@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import Dots from '../Dots';
 
@@ -13,7 +15,7 @@ export default function Hero() {
         />
         <div className="hero__description">{t('description')}</div>
         <a className="button button__primary" href="#contacts">
-          {t('button')} =&gt;
+          {t('button')} =>
         </a>
       </div>
       
